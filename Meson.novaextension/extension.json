@@ -1,0 +1,12 @@
+{
+    "identifier": "tech.staysail.Meson",
+    "name": "Meson",
+    "organization": "Staysail Systems",
+    "description": "Meson Build syntax support for Nova.",
+    "version": "1.0",
+    "min_runtime": 10.0,
+    "categories": ["languages"],
+    "repository": "https://github.com/staysail/nova-meson",
+    "bugs": "https://github.com/staysail/nova-meson/issues",
+    "license": "MIT"
+}

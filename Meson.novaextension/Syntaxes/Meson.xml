@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="meson">
+    <meta>
+        <name>Meson</name>
+        <type>compiled</type>
+        <preferred-file-extension>meson</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension priority="1.0">meson</extension>
+        <filename priority="1.0">meson.build</filename>
+        <filename priority="1.0">meson_options.txt</filename>
+    </detectors>
+    
+    <indentation>
+    <increase>
+        <expression>^\s*(if|foreach|elif|else).*</expression>
+    </increase>
+    <decrease>
+        <expression>(endif|elif|else|endforeach)</expression>
+    </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <injection>
+        <expression>^(meson)$</expression>
+    </injection>
+    
+    <tree-sitter language="meson">
+        <highlights path="highlights.scm" />
+        <folds path="folds.scm" />
+    </tree-sitter>
+</syntax>
